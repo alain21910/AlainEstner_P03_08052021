@@ -390,9 +390,9 @@ h1.title {
   color: white;
 }
 .number p {
-  padding: 0px 18px;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
+  padding: 0px 16px;
 }
 
 .fa-mobile-alt {
@@ -434,6 +434,7 @@ h1.title {
 .restaurant-container {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .restaurant {
@@ -938,13 +939,22 @@ footer > h2 {
 
 /* Mise en place des mediaQueries et des breakpoint du site  */
 @media screen and (min-width: 320px) and (max-width: 710px) {
+  .header__title {
+    font-size: 30px; 
+
+  }
+  
   .container {
     text-align: center;
   }
 
+  .number {
+    margin-left: -10px;
+  }
+
   .number p {
-    padding: 0px 15px;
-    font-size: 12px;
+    padding: 0px 8px;
+    font-size: 6px;
   }
 
   .tuto li {
@@ -1052,14 +1062,9 @@ footer > h2 {
   }
 
   .number {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5em;
-    margin-left: -35px;
+    margin-left: -20px;
   }
-  .number p {
-    padding-left: 17px;
-  }
+ 
 
   .carte a {
     display: -webkit-inline-box;
@@ -1090,9 +1095,8 @@ footer > h2 {
   }
   .header__arrow {
     font-size: 1.2em;
-    margin-left: -100px;
   }
-
+ 
   .entree__heading {
     padding-top: 5%;
   }
@@ -1197,13 +1201,7 @@ footer > h2 {
   }
 
   .number {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5em;
-    margin-left: -35px;
-  }
-  .number p {
-    padding-left: 17px;
+    margin-left: -20px;
   }
 
   .carte a {
